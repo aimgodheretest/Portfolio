@@ -36,8 +36,8 @@ A **modern, responsive frontend developer portfolio** showcasing my projects, sk
 ---
 
 ## 📸 Screenshots  
-![Home Page Screenshot](./sc1.png)  
-![Projects Section Screenshot](./sc4.png)
+![Home Page Screenshot](./public/sc1.png)  
+![Projects Section Screenshot](./public/sc4.png)
 
 ---
 
