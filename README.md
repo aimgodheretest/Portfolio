@@ -1,13 +1,48 @@
-# React + Vite
+# 💼 Murli's Frontend Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern, responsive frontend developer portfolio** showcasing my projects, skills, and experience in building sleek, high-performance web applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🔗 [View Live](https://portfolio-two-gamma-rhfcjxmm8b.vercel.app/)  
+💻 [GitHub Repo](https://github.com/aimgodheretest/Portfolio)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Portfolio
+## 🛠 Tech Stack  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61dafb)  
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)  
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white)  
+
+---
+
+## ✨ Features  
+- 🖥 Fully responsive 
+- 🗂 Project showcase with live demos and GitHub links  
+- 🎯 Smooth animations with Framer Motion  
+- ⚡ Fast-loading and SEO-friendly  
+- 📬 Contact form integration  
+
+---
+
+## 📂 Projects Showcased  
+- ☀️ **WeatherApp** – Real-time weather dashboard  
+- 🧠 **MindScope AI Search** – AI-powered semantic search  
+- 🎯 **MediaLoom** – AI-driven social media assistant  
+
+---
+
+## 📸 Screenshots  
+![Home Page Screenshot](./sc1.png)  
+![Projects Section Screenshot](./sc4.png)
+
+---
+
+## 📬 Contact Me  
+📧 **Email:** murlikumar07@gmail.com  
+🔗 **LinkedIn:** (https://www.linkedin.com/in/murli-kumar-95677759/)  
+🐙 **GitHub:** (https://github.com/aimgodheretest)
