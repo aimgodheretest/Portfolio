@@ -16,7 +16,6 @@ A **modern, responsive frontend developer portfolio** showcasing my projects, sk
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61dafb)  
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)  
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white)  
 
 ---
 
