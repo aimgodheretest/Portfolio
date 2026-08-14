@@ -8,7 +8,7 @@ import {
   UserRound,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navigation = [
   {
@@ -45,6 +45,33 @@ const navigation = [
 
 function Sidebar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const sections = navigation
+      .map((item) => document.getElementById(item.href.substring(1)))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSections = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visibleSections.length > 0) {
+          setActiveSection(visibleSections[0].target.id);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: [0.1, 0.25, 0.5],
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -57,6 +84,7 @@ function Sidebar() {
 
           <div>
             <p className="text-sm font-semibold text-slate-100">Murli Kumar</p>
+
             <p className="font-mono text-[10px] text-slate-500">
               full_stack.dev
             </p>
@@ -74,20 +102,23 @@ function Sidebar() {
 
       {/* Desktop sidebar */}
       <aside className="fixed left-0 top-0 z-40 hidden h-screen w-64 border-r border-[#252d38] bg-[#10151b] md:block">
-        <SidebarContent />
+        <SidebarContent activeSection={activeSection} onNavigate={() => {}} />
       </aside>
 
       {/* Mobile navigation */}
       {mobileOpen && (
         <div className="fixed inset-0 z-40 bg-[#0b0f14] pt-16 md:hidden">
-          <SidebarContent onNavigate={() => setMobileOpen(false)} />
+          <SidebarContent
+            activeSection={activeSection}
+            onNavigate={() => setMobileOpen(false)}
+          />
         </div>
       )}
     </>
   );
 }
 
-function SidebarContent({ onNavigate }) {
+function SidebarContent({ activeSection, onNavigate }) {
   return (
     <div className="flex h-full flex-col px-5 py-6">
       {/* Profile */}
@@ -116,14 +147,18 @@ function SidebarContent({ onNavigate }) {
         <nav className="space-y-1">
           {navigation.map((item) => {
             const Icon = item.icon;
+            const sectionId = item.href.substring(1);
+            const isActive = activeSection === sectionId;
 
             return (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={onNavigate}
-                className={`group flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-400 transition-all duration-200 hover:bg-[#181e26] hover:text-blue-400 ${
-                  item.label === "Home" ? "bg-[#181e26] text-blue-400" : ""
+                className={`group flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-all duration-200 ${
+                  isActive
+                    ? "bg-[#181e26] text-blue-400"
+                    : "text-slate-400 hover:bg-[#181e26] hover:text-blue-400"
                 }`}
               >
                 <Icon
