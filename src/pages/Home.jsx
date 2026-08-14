@@ -44,7 +44,7 @@ function Home() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/Murli-Kumar-Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-[#303947] bg-[#12171e] px-5 py-3 text-sm font-semibold text-slate-300 transition hover:border-blue-400/50 hover:text-blue-400"
@@ -59,7 +59,7 @@ function Home() {
             <div className="mt-7 flex items-center gap-4">
               {/* GitHub */}
               <a
-                href="https://github.com/"
+                href="https://github.com/aimgodheretest"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
@@ -77,7 +77,7 @@ function Home() {
 
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/murli-kumar"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -95,7 +95,7 @@ function Home() {
 
               {/* Email */}
               <a
-                href="mailto:your-email@gmail.com"
+                href="mailto:murlikumar07@gmail.com"
                 aria-label="Email"
                 className="text-slate-500 transition hover:text-blue-400"
               >
