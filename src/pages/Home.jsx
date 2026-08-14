@@ -95,7 +95,9 @@ function Home() {
 
               {/* Email */}
               <a
-                href="mailto:murlikumar07@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=murlikumar07@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Email"
                 className="text-slate-500 transition hover:text-blue-400"
               >
