@@ -50,12 +50,13 @@ function ProjectCard({ project, index }) {
       </div>
 
       {/* Actions */}
-      <div className="mt-auto flex gap-2 pt-7">
+      <div className="mt-auto flex items-center gap-3 pt-7">
+        {/* GitHub */}
         <a
-          href="https://github.com/"
+          href={project.github}
           target="_blank"
-          rel="noreferrer"
-          aria-label="GitHub"
+          rel="noopener noreferrer"
+          aria-label={`View ${project.title} on GitHub`}
           className="text-slate-500 transition hover:text-blue-400"
         >
           <svg
@@ -68,10 +69,12 @@ function ProjectCard({ project, index }) {
           </svg>
         </a>
 
+        {/* Live Demo */}
         <a
           href={project.live}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
+          aria-label={`Open live demo of ${project.title}`}
           className="inline-flex items-center gap-2 rounded-md bg-blue-500 px-3 py-2 text-xs font-semibold text-slate-950 transition hover:bg-blue-400"
         >
           Live

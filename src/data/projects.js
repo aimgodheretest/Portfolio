@@ -21,8 +21,8 @@ const projects = [
       "Tailwind CSS",
     ],
 
-    github: "#",
-    live: "#",
+    github: "https://github.com/aimgodheretest/Job-Application-Tracker",
+    live: "https://job-application-tracker-54r2.onrender.com/",
   },
 
   {
@@ -47,8 +47,8 @@ const projects = [
       "Cashfree",
     ],
 
-    github: "#",
-    live: "#",
+    github: "https://github.com/aimgodheretest/ExpenseTracker",
+    live: "https://expensetracker-frontend-kt50.onrender.com/",
   },
 
   {
@@ -72,8 +72,8 @@ const projects = [
       "JWT",
     ],
 
-    github: "#",
-    live: "#",
+    github: "https://github.com/aimgodheretest/Chat-App",
+    live: "https://github.com/aimgodheretest/Chat-App",
   },
 ];
 
