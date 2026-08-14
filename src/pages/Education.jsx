@@ -69,7 +69,7 @@ function Education() {
               }`}
             >
               {/* Timeline point */}
-              <div className="absolute -left-[37px] top-8 h-2.5 w-2.5 rounded-full border-2 border-blue-400 bg-[#0b0f14] sm:-left-[45px]" />
+              <div className="absolute -left-9.25 top-8 h-2.5 w-2.5 rounded-full border-2 border-blue-400 bg-[#0b0f14] sm:-left-11.25" />
 
               <article className="rounded-xl border border-[#252d38] bg-[#12171e] p-6 transition-all duration-300 hover:border-blue-400/30">
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
