@@ -4,6 +4,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Education from "./pages/Education";
 import Certifications from "./pages/Certifications";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="min-h-screen bg-[#0b0f14] text-slate-200">
@@ -15,6 +16,7 @@ function App() {
         <Skills />
         <Education />
         <Certifications />
+        <Contact />
       </main>
     </div>
   );
