@@ -2,6 +2,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Education from "./pages/Education";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Home />
         <Projects />
         <Skills />
+        <Education />
       </main>
     </div>
   );
