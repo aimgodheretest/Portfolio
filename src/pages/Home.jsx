@@ -44,7 +44,7 @@ function Home() {
               </a>
 
               <a
-                href="/Murli-Kumar-Resume.pdf"
+                href="/Murli-Kumar-Backend-Developer"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-[#303947] bg-[#12171e] px-5 py-3 text-sm font-semibold text-slate-300 transition hover:border-blue-400/50 hover:text-blue-400"
